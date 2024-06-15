@@ -1,5 +1,6 @@
 <script>
     import "@picocss/pico/css/pico.slate.min.css";
+    import { inject } from "@vercel/analytics";
 </script>
 
 <svelte:head>
