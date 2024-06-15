@@ -1,6 +1,6 @@
 # Ajin Varghese Chandy 🖐️
 
-# dev skills
+## dev skills
 * svelte
 * svelte kit
 * c++
