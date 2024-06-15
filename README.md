@@ -6,6 +6,6 @@
 * c++
 * javascript
 
-**80% of time focused on making content**
+**80% of time focused on making content.**
 
 ### the language doesn't matter its the solution that make changes.
