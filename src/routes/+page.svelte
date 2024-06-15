@@ -5,8 +5,9 @@
 </svelte:head>
 
 <h1>
-    ajin varghese chandy
+    Ajin Varghese Chandy. 
 </h1>
 <p>
-    dev stuff.
+    dev stuff 👇
 </p>
+
