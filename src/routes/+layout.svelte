@@ -1,6 +1,8 @@
 <script>
+    import { dev } from "$app/environment";
     import "@picocss/pico/css/pico.slate.min.css";
     import { inject } from "@vercel/analytics";
+    inject({ mode: dev ? "development" : "production" });
 </script>
 
 <svelte:head>
