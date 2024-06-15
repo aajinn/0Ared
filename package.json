@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@picocss/pico": "^2.0.6",
 		"nvm": "^0.0.4"
 	}
 }

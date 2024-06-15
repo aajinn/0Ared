@@ -23,5 +23,5 @@
 
 </svelte:head>
 
-<slot></slot>
+<slot class="container" ></slot>
 
