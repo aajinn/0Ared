@@ -14,10 +14,6 @@
             <li><a href={link.href}>{link.text}</a></li>
         {/each}
     </ul>
-    <div class="counter">
-        <p>Visitors:</p>
-        <img src="/api/placeholder/80/20" alt="Visitor Counter" />
-    </div>
 </aside>
 
 <style>
@@ -45,9 +41,5 @@
     }
     a:hover {
         text-decoration: underline;
-    }
-    .counter {
-        text-align: center;
-        margin-top: 20px;
     }
 </style>

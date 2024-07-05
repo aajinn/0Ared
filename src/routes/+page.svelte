@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>Home - The Classic Chronicle</title>
+    <title>ARed</title>
 </svelte:head>
 
 <MainContent />

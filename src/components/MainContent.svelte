@@ -12,6 +12,42 @@
             content:
                 "Today, I want to share some of my favorite websites with you! Check out Geocities, Neopets, and Myspace. They're super cool! What are your favorite sites?",
         },
+        {
+            title: "Welcome to My Blog!",
+            date: "July 5, 2024",
+            content:
+                "Hello, World Wide Web! 👋 Welcome to my very first blog post! I'm so excited to share my thoughts with you all. Stay tuned for more awesome content!",
+        },
+        {
+            title: "My Favorite Websites",
+            date: "July 4, 2024",
+            content:
+                "Today, I want to share some of my favorite websites with you! Check out Geocities, Neopets, and Myspace. They're super cool! What are your favorite sites?",
+        },
+        {
+            title: "Welcome to My Blog!",
+            date: "July 5, 2024",
+            content:
+                "Hello, World Wide Web! 👋 Welcome to my very first blog post! I'm so excited to share my thoughts with you all. Stay tuned for more awesome content!",
+        },
+        {
+            title: "My Favorite Websites",
+            date: "July 4, 2024",
+            content:
+                "Today, I want to share some of my favorite websites with you! Check out Geocities, Neopets, and Myspace. They're super cool! What are your favorite sites?",
+        },
+        {
+            title: "Welcome to My Blog!",
+            date: "July 5, 2024",
+            content:
+                "Hello, World Wide Web! 👋 Welcome to my very first blog post! I'm so excited to share my thoughts with you all. Stay tuned for more awesome content!",
+        },
+        {
+            title: "My Favorite Websites",
+            date: "July 4, 2024",
+            content:
+                "Today, I want to share some of my favorite websites with you! Check out Geocities, Neopets, and Myspace. They're super cool! What are your favorite sites?",
+        },
     ];
 </script>
 

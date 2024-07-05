@@ -1,5 +1,5 @@
 <script>
-    let title = "My Old-Style Blog";
+    let title = "ARed";
 </script>
 
 <header>
