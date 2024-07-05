@@ -40,8 +40,7 @@
 
 <style>
     :global(body) {
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        background-image: url("/api/placeholder/800/600");
+        font-family: "Comic Sans MS", sans-serif;
         background-repeat: repeat;
         margin: 0;
         padding: 0;

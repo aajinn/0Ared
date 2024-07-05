@@ -46,10 +46,6 @@
     a:hover {
         text-decoration: underline;
     }
-    .counter {
-        text-align: center;
-        margin-top: 20px;
-    }
 
     @media (min-width: 768px) {
         aside {
