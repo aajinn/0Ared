@@ -17,7 +17,7 @@ function createBlogStore() {
             }
 
             const { data, error } = await supabase
-                .from("blog_posts")
+                .from("posts")
                 .select("*")
                 .order("created_at", { ascending: false });
 
