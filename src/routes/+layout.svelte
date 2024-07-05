@@ -1,8 +1,10 @@
 <script>
     import { dev } from "$app/environment";
-    import "@picocss/pico/css/pico.slate.min.css";
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
+    import Header from "../components/Header.svelte";
+    import Nav from "../components/Nav.svelte";
+    import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -25,6 +27,53 @@
     <meta property="og:image" content="https://ared.dev/ared.png" />
 </svelte:head>
 
-<div class="container">
-    <slot />
-</div>
+<div id="container">
+    <Header />
+    <div id="content">
+        <Nav />
+        <main>
+            <slot />
+        </main>
+    </div>
+    <Footer />
+</div>>
+
+<style>
+    :global(body) {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-image: url("/api/placeholder/800/600");
+        background-repeat: repeat;
+        margin: 0;
+        padding: 0;
+        color: #000080;
+    }
+    #container {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #ffffe0;
+        border: 5px solid #ff00ff;
+        box-sizing: border-box;
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+        padding: 20px;
+        background-color: #ffffff;
+        border-left: none;
+        border-top: 3px dashed #00ffff;
+    }
+
+    @media (min-width: 768px) {
+        #content {
+            flex-direction: row;
+        }
+        main {
+            border-left: 3px dashed #00ffff;
+            border-top: none;
+        }
+    }
+</style>
