@@ -18,10 +18,11 @@
 
 <style>
     aside {
-        width: 200px;
+        width: 100%;
         background-color: #98fb98;
         padding: 20px;
-        border-left: 3px dotted #ff69b4;
+        border-top: 3px dotted #ff69b4;
+        box-sizing: border-box;
     }
     h3 {
         color: #ff4500;
@@ -31,9 +32,12 @@
     ul {
         list-style-type: none;
         padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     li {
-        margin-bottom: 10px;
+        margin: 5px 10px;
     }
     a {
         color: #0000ff;
@@ -41,5 +45,23 @@
     }
     a:hover {
         text-decoration: underline;
+    }
+    .counter {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+        aside {
+            width: 200px;
+            border-top: none;
+            border-left: 3px dotted #ff69b4;
+        }
+        ul {
+            flex-direction: column;
+        }
+        li {
+            margin-bottom: 10px;
+        }
     }
 </style>

@@ -17,16 +17,20 @@
 
 <style>
     nav {
-        width: 150px;
+        width: 100%;
         background-color: #ffb6c1;
         padding: 10px;
+        box-sizing: border-box;
     }
     ul {
         list-style-type: none;
         padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     li {
-        margin-bottom: 10px;
+        margin: 5px 10px;
     }
     a {
         color: #0000ff;
@@ -35,5 +39,17 @@
     }
     a:hover {
         text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+        nav {
+            width: 150px;
+        }
+        ul {
+            flex-direction: column;
+        }
+        li {
+            margin-bottom: 10px;
+        }
     }
 </style>

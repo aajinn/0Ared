@@ -9,4 +9,14 @@
         padding: 10px;
         border-top: 3px dashed #ff69b4;
     }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    @media (min-width: 768px) {
+        p {
+            font-size: 1em;
+        }
+    }
 </style>

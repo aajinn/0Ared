@@ -24,12 +24,12 @@
         text-shadow: 2px 2px #000000;
     }
     h1 {
-        font-size: 3em;
+        font-size: 2em;
         margin: 0;
         animation: rainbow 5s infinite;
     }
     p {
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 10px 0 0;
     }
     @keyframes rainbow {
@@ -53,6 +53,15 @@
         }
         100% {
             color: #ff0000;
+        }
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.2em;
         }
     }
 </style>

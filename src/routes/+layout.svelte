@@ -48,18 +48,32 @@
         color: #000080;
     }
     #container {
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
         margin: 20px auto;
         background-color: #ffffe0;
         border: 5px solid #ff00ff;
+        box-sizing: border-box;
     }
     #content {
         display: flex;
+        flex-direction: column;
     }
     main {
         flex: 1;
         padding: 20px;
         background-color: #ffffff;
-        border-left: 3px dashed #00ffff;
+        border-left: none;
+        border-top: 3px dashed #00ffff;
+    }
+
+    @media (min-width: 768px) {
+        #content {
+            flex-direction: row;
+        }
+        main {
+            border-left: 3px dashed #00ffff;
+            border-top: none;
+        }
     }
 </style>

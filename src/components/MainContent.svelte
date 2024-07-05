@@ -74,6 +74,7 @@
     h2 {
         color: #ff1493;
         text-decoration: underline;
+        font-size: 1.5em;
     }
     .date {
         font-style: italic;
@@ -91,5 +92,11 @@
             #8b00ff
         );
         margin: 20px 0;
+    }
+
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 2em;
+        }
     }
 </style>
