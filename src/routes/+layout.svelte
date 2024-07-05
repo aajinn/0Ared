@@ -3,6 +3,9 @@
     import "@picocss/pico/css/pico.slate.min.css";
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
+    import Header from "../components/Header.svelte";
+    import Nav from "../components/Nav.svelte";
+    import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -25,6 +28,32 @@
     <meta property="og:image" content="https://ared.dev/ared.png" />
 </svelte:head>
 
-<div class="container">
-    <slot />
+<div id="container">
+    <Header />
+    <Nav />
+    <main>
+        <slot />
+    </main>
+    <Footer />
 </div>
+
+<style>
+    :global(body) {
+        font-family: Georgia, serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+    }
+    #container {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    main {
+        display: flex;
+        padding: 20px;
+    }
+</style>
