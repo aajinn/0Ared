@@ -29,30 +29,37 @@
 
 <div id="container">
     <Header />
-    <Nav />
-    <main>
-        <slot />
-    </main>
+    <div id="content">
+        <Nav />
+        <main>
+            <slot />
+        </main>
+    </div>
     <Footer />
-</div>
+</div>>
 
 <style>
     :global(body) {
-        font-family: Georgia, serif;
-        background-color: #f4f4f4;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-image: url("/api/placeholder/800/600");
+        background-repeat: repeat;
         margin: 0;
         padding: 0;
-        line-height: 1.6;
-        color: #333;
+        color: #000080;
     }
     #container {
-        max-width: 960px;
-        margin: 0 auto;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 800px;
+        margin: 20px auto;
+        background-color: #ffffe0;
+        border: 5px solid #ff00ff;
+    }
+    #content {
+        display: flex;
     }
     main {
-        display: flex;
+        flex: 1;
         padding: 20px;
+        background-color: #ffffff;
+        border-left: 3px dashed #00ffff;
     }
 </style>

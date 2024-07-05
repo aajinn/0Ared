@@ -1,59 +1,59 @@
 <script>
     let posts = [
         {
-            title: "The Art of Classic Web Design",
+            title: "Welcome to My Blog!",
             date: "July 5, 2024",
-            author: "Jane Doe",
             content:
-                "In the ever-evolving world of web design, there's something to be said for the classic approach. Clean lines, readable typography, and a focus on content have always been the hallmarks of good design. This article explores how these principles continue to shape the web today.",
+                "Hello, World Wide Web! 👋 Welcome to my very first blog post! I'm so excited to share my thoughts with you all. Stay tuned for more awesome content!",
         },
         {
-            title: "Responsive Design: A Modern Classic",
+            title: "My Favorite Websites",
             date: "July 4, 2024",
-            author: "John Smith",
             content:
-                "While 'responsive design' might seem like a modern concept, its roots lie in the classic principle of universal access. We'll examine how this approach embodies timeless design philosophies while addressing contemporary needs.",
+                "Today, I want to share some of my favorite websites with you! Check out Geocities, Neopets, and Myspace. They're super cool! What are your favorite sites?",
         },
     ];
 </script>
 
-<div class="main-content">
+<div class="blog-posts">
     {#each posts as post}
         <article>
             <h2>{post.title}</h2>
-            <p class="meta">Posted on {post.date} by {post.author}</p>
+            <p class="date">Posted on {post.date}</p>
             <p>{post.content}</p>
-            <a href="#" class="read-more">Read More</a>
+            <div class="divider"></div>
         </article>
     {/each}
 </div>
 
 <style>
-    .main-content {
-        flex: 1;
-        padding-right: 20px;
+    .blog-posts {
+        background-color: #ffffff;
+        padding: 20px;
+        border: 2px solid #ff69b4;
     }
     article {
         margin-bottom: 30px;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 20px;
     }
     h2 {
-        color: #1a1a1a;
-        margin-bottom: 10px;
-    }
-    .meta {
-        font-style: italic;
-        color: #666;
-    }
-    .read-more {
-        display: inline-block;
-        margin-top: 10px;
-        color: #1a1a1a;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .read-more:hover {
+        color: #ff1493;
         text-decoration: underline;
+    }
+    .date {
+        font-style: italic;
+        color: #808080;
+    }
+    .divider {
+        height: 2px;
+        background: linear-gradient(
+            to right,
+            #ff0000,
+            #ff7f00,
+            #ffff00,
+            #00ff00,
+            #0000ff,
+            #8b00ff
+        );
+        margin: 20px 0;
     }
 </style>

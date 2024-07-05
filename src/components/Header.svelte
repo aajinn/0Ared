@@ -1,26 +1,58 @@
 <script>
-    let title = "The Classic Chronicle";
+    let title = "My Old-Style Blog";
 </script>
 
 <header>
     <h1>{title}</h1>
-    <p>Timeless Web Design Since 1998</p>
+    <p>🌟 Welcome to my corner of the World Wide Web! 🌟</p>
 </header>
 
 <style>
     header {
-        background-color: #1a1a1a;
+        background: linear-gradient(
+            to right,
+            #ff0000,
+            #ff7f00,
+            #ffff00,
+            #00ff00,
+            #0000ff,
+            #8b00ff
+        );
         color: #ffffff;
         padding: 20px;
         text-align: center;
+        text-shadow: 2px 2px #000000;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 3em;
         margin: 0;
-        font-weight: normal;
+        animation: rainbow 5s infinite;
     }
     p {
-        font-style: italic;
-        margin: 5px 0 0;
+        font-size: 1.2em;
+        margin: 10px 0 0;
+    }
+    @keyframes rainbow {
+        0% {
+            color: #ff0000;
+        }
+        16% {
+            color: #ff7f00;
+        }
+        33% {
+            color: #ffff00;
+        }
+        50% {
+            color: #00ff00;
+        }
+        66% {
+            color: #0000ff;
+        }
+        83% {
+            color: #8b00ff;
+        }
+        100% {
+            color: #ff0000;
+        }
     }
 </style>

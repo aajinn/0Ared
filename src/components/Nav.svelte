@@ -1,29 +1,37 @@
 <script>
     let navItems = [
         { href: "/", text: "Home" },
-        { href: "/about", text: "About" },
-        { href: "/contact", text: "Contact" },
+        { href: "/guestbook", text: "Guestbook" },
+        { href: "#", text: "Links" },
+        { href: "#", text: "About Me" },
     ];
 </script>
 
 <nav>
-    {#each navItems as item}
-        <a href={item.href}>{item.text}</a>
-    {/each}
+    <ul>
+        {#each navItems as item}
+            <li><a href={item.href}>{item.text}</a></li>
+        {/each}
+    </ul>
 </nav>
 
 <style>
     nav {
-        background-color: #333;
+        width: 150px;
+        background-color: #ffb6c1;
         padding: 10px;
-        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
     }
     a {
-        color: #ffffff;
+        color: #0000ff;
         text-decoration: none;
-        padding: 5px 15px;
-        margin: 0 5px;
-        font-family: Arial, sans-serif;
+        font-weight: bold;
     }
     a:hover {
         text-decoration: underline;

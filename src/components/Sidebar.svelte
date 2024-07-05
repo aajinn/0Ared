@@ -1,41 +1,36 @@
 <script>
-    let categories = ["Web Design", "Typography", "Usability", "Accessibility"];
-    let recentPosts = [
-        "The Future of CSS",
-        "JavaScript: Then and Now",
-        "The Importance of Web Standards",
+    let links = [
+        { href: "#", text: "My Neopets" },
+        { href: "#", text: "Cool Backgrounds" },
+        { href: "#", text: "Funny Gifs" },
+        { href: "#", text: "Web Rings" },
     ];
 </script>
 
 <aside>
-    <section>
-        <h3>Categories</h3>
-        <ul>
-            {#each categories as category}
-                <li><a href="#">{category}</a></li>
-            {/each}
-        </ul>
-    </section>
-    <section>
-        <h3>Recent Posts</h3>
-        <ul>
-            {#each recentPosts as post}
-                <li><a href="#">{post}</a></li>
-            {/each}
-        </ul>
-    </section>
+    <h3>🔥 Hot Links! 🔥</h3>
+    <ul>
+        {#each links as link}
+            <li><a href={link.href}>{link.text}</a></li>
+        {/each}
+    </ul>
+    <div class="counter">
+        <p>Visitors:</p>
+        <img src="/api/placeholder/80/20" alt="Visitor Counter" />
+    </div>
 </aside>
 
 <style>
     aside {
-        width: 250px;
-        padding-left: 20px;
-        border-left: 1px solid #ddd;
+        width: 200px;
+        background-color: #98fb98;
+        padding: 20px;
+        border-left: 3px dotted #ff69b4;
     }
     h3 {
-        color: #1a1a1a;
-        border-bottom: 2px solid #1a1a1a;
-        padding-bottom: 5px;
+        color: #ff4500;
+        text-align: center;
+        text-decoration: underline;
     }
     ul {
         list-style-type: none;
@@ -45,10 +40,14 @@
         margin-bottom: 10px;
     }
     a {
-        color: #1a1a1a;
+        color: #0000ff;
         text-decoration: none;
     }
     a:hover {
         text-decoration: underline;
+    }
+    .counter {
+        text-align: center;
+        margin-top: 20px;
     }
 </style>
