@@ -40,6 +40,7 @@
         padding: 0;
         color: #000080;
     }
+
     #container {
         width: 100%;
         max-width: 800px;

@@ -137,6 +137,10 @@
         color: red;
         font-size: medium;
     }
+    .answer:hover {
+        transform: scale(2);
+        transition: 500ms all;
+    }
     .answer {
         border: 2px solid rgb(0, 255, 0);
         padding: 10px;
