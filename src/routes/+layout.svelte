@@ -3,7 +3,6 @@
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
     import Header from "../components/Header.svelte";
-    import Nav from "../components/Nav.svelte";
 </script>
 
 <svelte:head>
