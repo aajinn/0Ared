@@ -30,7 +30,8 @@
             <slot />
         </main>
     </div>
-</div>>
+    <footer> 2024 | ARed</footer>
+</div>
 
 <style>
     :global(body) {
@@ -45,7 +46,7 @@
         width: 100%;
         max-width: 800px;
         margin: 20px auto;
-        background-color: #ffffe0;
+        background-color: #ffffff;
         box-sizing: border-box;
     }
     #content {
