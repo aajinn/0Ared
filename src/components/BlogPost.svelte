@@ -7,7 +7,7 @@
     <p class="date"
         >Posted on {new Date(post.created_at).toLocaleDateString()}</p
     >
-    <p>{post.content}</p>
+    <p contenteditable="false" bind:innerHTML={post.content}>{post.content}</p>
     <div class="divider"></div>
 </article>
 

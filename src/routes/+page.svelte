@@ -6,6 +6,7 @@
     onMount(() => {
         blogStore.fetchPosts();
     });
+    console.log($blogStore);
 </script>
 
 <svelte:head>
