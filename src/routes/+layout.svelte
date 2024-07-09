@@ -48,6 +48,7 @@
         margin: 20px auto;
         background-color: #ffffff;
         box-sizing: border-box;
+        border-left: 2px solid blue;
     }
     #content {
         display: flex;
@@ -67,5 +68,8 @@
         main {
             border-top: none;
         }
+    }
+    footer {
+        padding: 20px;
     }
 </style>
