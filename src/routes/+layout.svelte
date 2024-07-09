@@ -2,9 +2,6 @@
     import { dev } from "$app/environment";
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
-    import Header from "../components/Header.svelte";
-    import Nav from "../components/Nav.svelte";
-    import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -28,15 +25,13 @@
 </svelte:head>
 
 <div id="container">
-    <Header />
     <div id="content">
-        <Nav />
         <main>
             <slot />
         </main>
     </div>
-    <Footer />
-</div>>
+    <footer> 2024 | ARed</footer>
+</div>
 
 <style>
     :global(body) {
@@ -45,14 +40,16 @@
         margin: 0;
         padding: 0;
         color: #000080;
+        padding: 10px;
     }
+
     #container {
         width: 100%;
         max-width: 800px;
         margin: 20px auto;
-        background-color: #ffffe0;
-        border: 5px solid #ff00ff;
+        background-color: #ffffff;
         box-sizing: border-box;
+        border-left: 2px solid blue;
     }
     #content {
         display: flex;
@@ -63,7 +60,6 @@
         padding: 20px;
         background-color: #ffffff;
         border-left: none;
-        border-top: 3px dashed #00ffff;
     }
 
     @media (min-width: 768px) {
@@ -71,8 +67,10 @@
             flex-direction: row;
         }
         main {
-            border-left: 3px dashed #00ffff;
             border-top: none;
         }
+    }
+    footer {
+        padding: 20px;
     }
 </style>
