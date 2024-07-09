@@ -4,7 +4,6 @@
     inject({ mode: dev ? "development" : "production" });
     import Header from "../components/Header.svelte";
     import Nav from "../components/Nav.svelte";
-    import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -35,7 +34,6 @@
             <slot />
         </main>
     </div>
-    <Footer />
 </div>>
 
 <style>
@@ -51,7 +49,6 @@
         max-width: 800px;
         margin: 20px auto;
         background-color: #ffffe0;
-        border: 5px solid #ff00ff;
         box-sizing: border-box;
     }
     #content {
