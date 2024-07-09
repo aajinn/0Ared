@@ -58,7 +58,6 @@
         padding: 20px;
         background-color: #ffffff;
         border-left: none;
-        border-top: 3px dashed #00ffff;
     }
 
     @media (min-width: 768px) {
