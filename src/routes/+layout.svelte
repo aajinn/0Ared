@@ -2,7 +2,6 @@
     import { dev } from "$app/environment";
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
-    import Header from "../components/Header.svelte";
 </script>
 
 <svelte:head>
@@ -26,7 +25,6 @@
 </svelte:head>
 
 <div id="container">
-    <Header />
     <div id="content">
         <main>
             <slot />
@@ -65,7 +63,6 @@
             flex-direction: row;
         }
         main {
-            border-left: 3px dashed #00ffff;
             border-top: none;
         }
     }
