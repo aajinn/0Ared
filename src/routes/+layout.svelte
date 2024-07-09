@@ -40,6 +40,7 @@
         margin: 0;
         padding: 0;
         color: #000080;
+        padding: 10px;
     }
 
     #container {

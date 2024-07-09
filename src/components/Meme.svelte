@@ -120,22 +120,23 @@
     let meme = memes[getRandomIndex(0, memes.length)];
 </script>
 
-{#if answered}
-    <div class="answer">
-        <h1>{meme}</h1>
-    </div>
-{:else}
-    <div class="question">
+<div class="question">
+    {#if answered}
+        <div class="answer">
+            <h1>{meme}</h1>
+        </div>
+    {:else}
         <h1>Are you a programmer?</h1>
         <button on:click={() => (answered = true)}>Yess!</button>
         <button on:click={() => (answered = true)}>Noo!</button>
-    </div>
-{/if}
+    {/if}
+</div>
 
 <style>
     .answer h1 {
         color: red;
-        font-size: medium;
+        font-size: large;
+        width: 100%;
     }
     .answer:hover {
         transform: scale(2);
@@ -145,5 +146,12 @@
         border: 2px solid rgb(0, 255, 0);
         padding: 10px;
         width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .question {
+        height: 70px;
     }
 </style>
