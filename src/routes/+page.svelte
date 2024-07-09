@@ -1,5 +1,4 @@
 <script>
-    import Animation from "../components/Animation.svelte";
     import Meme from "../components/Meme.svelte";
 </script>
 
@@ -10,7 +9,8 @@
     <h1> ARed </h1>
     <p>I love code.</p>
     <a href="https://github.com/ARed99/">github</a>
-    <Animation />
+    <h1> hey, ✌️ </h1>
+    <p> discord : .ajin_v </p>
     <Meme />
 </main>
 
