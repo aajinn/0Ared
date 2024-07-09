@@ -29,7 +29,6 @@
 <div id="container">
     <Header />
     <div id="content">
-        <Nav />
         <main>
             <slot />
         </main>
