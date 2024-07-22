@@ -17,10 +17,4 @@
     main {
         padding: 2rem;
     }
-    h1:hover,
-    p:hover,
-    a:hover {
-        transform: scale(2);
-        transition: 500ms all;
-    }
 </style>
