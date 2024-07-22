@@ -5,3 +5,11 @@
     font-style: normal;
     font-stretch: extra-expanded;
 }
+:global(body) {
+    font-family: "common", sans-serif;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    color: #000080;
+    padding: 10px;
+}
