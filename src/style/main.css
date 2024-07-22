@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "common";
+    src: url("../fonts/Inconsolata.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: extra-expanded;
+}
+body {
+    font-family: "common", sans-serif;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    color: #000080;
+    padding: 10px;
+    height: 98vh;
+    display: grid;
+    place-items: center;
+}
+@media (min-width: 768px) {
+    #content {
+        flex-direction: row;
+    }
+    main {
+        border-top: none;
+    }
+}

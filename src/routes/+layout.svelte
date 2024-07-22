@@ -1,6 +1,7 @@
 <script>
     import { dev } from "$app/environment";
     import { inject } from "@vercel/analytics";
+    import "../style/main.css";
     inject({ mode: dev ? "development" : "production" });
 </script>
 
@@ -28,28 +29,20 @@
     <div id="content">
         <main>
             <slot />
+            <footer> 2024 | ARed</footer>
         </main>
     </div>
-    <footer> 2024 | ARed</footer>
 </div>
 
 <style>
-    :global(body) {
-        font-family: "Comic Sans MS", sans-serif;
-        background-repeat: repeat;
-        margin: 0;
-        padding: 0;
-        color: #000080;
-        padding: 10px;
-    }
-
     #container {
         width: 100%;
         max-width: 800px;
-        margin: 20px auto;
+
         background-color: #ffffff;
         box-sizing: border-box;
-        border-left: 2px solid blue;
+        border: 2px solid blue;
+        height: 90%;
     }
     #content {
         display: flex;
@@ -62,14 +55,6 @@
         border-left: none;
     }
 
-    @media (min-width: 768px) {
-        #content {
-            flex-direction: row;
-        }
-        main {
-            border-top: none;
-        }
-    }
     footer {
         padding: 20px;
     }
