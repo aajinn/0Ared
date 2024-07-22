@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "common";
+    src: url("../fonts/Inconsolata.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: extra-expanded;
+}
