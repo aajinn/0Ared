@@ -48,4 +48,7 @@
         padding: 1rem;
         padding-left: 0%;
     }
+    h1 {
+        font-size: 24px;
+    }
 </style>
