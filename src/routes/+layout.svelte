@@ -1,6 +1,7 @@
 <script>
     import { dev } from "$app/environment";
     import { inject } from "@vercel/analytics";
+    import "../style/main.css";
     inject({ mode: dev ? "development" : "production" });
 </script>
 
@@ -35,7 +36,7 @@
 
 <style>
     :global(body) {
-        font-family: "Comic Sans MS", sans-serif;
+        font-family: "common", sans-serif;
         background-repeat: repeat;
         margin: 0;
         padding: 0;
