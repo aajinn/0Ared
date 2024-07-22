@@ -29,19 +29,20 @@
     <div id="content">
         <main>
             <slot />
+            <footer> 2024 | ARed</footer>
         </main>
     </div>
-    <footer> 2024 | ARed</footer>
 </div>
 
 <style>
     #container {
         width: 100%;
         max-width: 800px;
-        margin: 20px auto;
+
         background-color: #ffffff;
         box-sizing: border-box;
         border: 2px solid blue;
+        height: 90%;
     }
     #content {
         display: flex;

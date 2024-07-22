@@ -12,7 +12,9 @@ body {
     padding: 0;
     color: #000080;
     padding: 10px;
-    height: 100vh;
+    height: 98vh;
+    display: grid;
+    place-items: center;
 }
 @media (min-width: 768px) {
     #content {
