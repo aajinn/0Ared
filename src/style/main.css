@@ -12,6 +12,7 @@ body {
     padding: 0;
     color: #000080;
     padding: 10px;
+    height: 100vh;
 }
 @media (min-width: 768px) {
     #content {
