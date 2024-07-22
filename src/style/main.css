@@ -13,3 +13,11 @@
     color: #000080;
     padding: 10px;
 }
+@media (min-width: 768px) {
+    #content {
+        flex-direction: row;
+    }
+    main {
+        border-top: none;
+    }
+}
