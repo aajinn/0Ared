@@ -54,14 +54,6 @@
         border-left: none;
     }
 
-    @media (min-width: 768px) {
-        #content {
-            flex-direction: row;
-        }
-        main {
-            border-top: none;
-        }
-    }
     footer {
         padding: 20px;
     }
