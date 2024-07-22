@@ -35,15 +35,6 @@
 </div>
 
 <style>
-    :global(body) {
-        font-family: "common", sans-serif;
-        background-repeat: repeat;
-        margin: 0;
-        padding: 0;
-        color: #000080;
-        padding: 10px;
-    }
-
     #container {
         width: 100%;
         max-width: 800px;
