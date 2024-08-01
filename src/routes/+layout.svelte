@@ -36,9 +36,7 @@
 
 <style>
     #container {
-        width: 100%;
-        max-width: 800px;
-
+        width: fit-content;
         background-color: #ffffff;
         box-sizing: border-box;
         border: 2px solid blue;
