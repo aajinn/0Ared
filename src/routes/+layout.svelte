@@ -29,18 +29,22 @@
     <div id="content">
         <main>
             <slot />
-            <footer> 2024 | ARed</footer>
         </main>
     </div>
+    <footer> 2024 | ARed</footer>
 </div>
 
 <style>
     #container {
-        width: fit-content;
         background-color: #ffffff;
         box-sizing: border-box;
         border: 2px solid blue;
         height: 90%;
+        display: flex;
+        margin: auto;
+        width: 100%;
+        border-style: dotted;
+        justify-content: center;
     }
     #content {
         display: flex;
@@ -55,5 +59,6 @@
 
     footer {
         padding: 20px;
+        align-self: flex-end;
     }
 </style>
