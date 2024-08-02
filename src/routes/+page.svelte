@@ -15,10 +15,7 @@
             <li><p>javascript</p></li>
         </b>
     </ul>
-    <p
-        >You feel bad because you know what you’re supposed to do and you aren’t
-        doing it.
-    </p>
+    <p> chandyajin@gmail.com </p>
     <nav>
         <ul>
             <li><p><a href="https://github.com/ARed99/">Github</a></p></li>
