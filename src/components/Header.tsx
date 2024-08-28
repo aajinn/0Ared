@@ -8,9 +8,9 @@ export default function Header() {
           </div>
           <nav className="flex flex-wrap justify-center md:justify-end md:space-x-4">
             <NavLink href="/" text="Home" />
-            <NavLink href="/about" text="github" />
             <NavLink href="/projects" text="Projects" />
-            <NavLink href="/contact" text="X" />
+            <NavLink href="https://github.com/ARed99" text="Github" />
+            <NavLink href="https://x.com/ChandyAjin" text="X" />
           </nav>
         </div>
       </div>
