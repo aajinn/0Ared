@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
-import Description from "@/components/Description";
-import RecentActivities from "@/components/RecentActivities";
+import Description from "../components/Description";
+import RecentActivities from "../components/RecentActivities";
 
 export default function Home() {
   return (
