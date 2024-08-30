@@ -4,9 +4,9 @@
   "settings": {
     "createdAt": 1724994104236,
     "framework": "nextjs",
-    "devCommand": null,
-    "installCommand": null,
-    "buildCommand": null,
+    "devCommand": "npm run dev",
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
     "outputDirectory": null,
     "rootDirectory": null,
     "directoryListing": false,

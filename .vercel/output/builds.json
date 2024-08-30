@@ -15,7 +15,10 @@
       "use": "@vercel/next",
       "config": {
         "zeroConfig": true,
-        "framework": "nextjs"
+        "framework": "nextjs",
+        "devCommand": "npm run dev",
+        "installCommand": "npm install",
+        "buildCommand": "npm run build"
       }
     }
   ],
