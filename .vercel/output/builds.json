@@ -24,12 +24,12 @@
   ],
   "error": {
     "name": "Error",
-    "stack": "Error: EPERM: operation not permitted, symlink '_not-found.func' -> 'C:\\Users\\chand\\OneDrive\\Documents\\projects\\ared\\.vercel\\output\\functions\\_not-found.rsc.func'",
-    "message": "EPERM: operation not permitted, symlink '_not-found.func' -> 'C:\\Users\\chand\\OneDrive\\Documents\\projects\\ared\\.vercel\\output\\functions\\_not-found.rsc.func'",
+    "stack": "Error: EPERM: operation not permitted, symlink '_not-found.func' -> 'C:\\Projects\\ared\\.vercel\\output\\functions\\_not-found.rsc.func'",
+    "message": "EPERM: operation not permitted, symlink '_not-found.func' -> 'C:\\Projects\\ared\\.vercel\\output\\functions\\_not-found.rsc.func'",
     "errno": -4048,
     "code": "EPERM",
     "syscall": "symlink",
     "path": "_not-found.func",
-    "dest": "C:\\Users\\chand\\OneDrive\\Documents\\projects\\ared\\.vercel\\output\\functions\\_not-found.rsc.func"
+    "dest": "C:\\Projects\\ared\\.vercel\\output\\functions\\_not-found.rsc.func"
   }
 }
