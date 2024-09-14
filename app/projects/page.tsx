@@ -6,7 +6,7 @@ export default function Projects() {
     <Layout>
       {" "}
       {/* Use the Layout component for centering */}
-      <h1 className="text-3xl font-bold text-center mb-6">Projects</h1>
+      <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <li
