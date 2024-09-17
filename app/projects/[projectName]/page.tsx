@@ -8,6 +8,7 @@ export default async function ProjectPage({
 }: {
   params: { projectName: string };
 }) {
+  console.log(params.projectName);
   const project = projects.find((p) => p.slug === params.projectName);
   console.log(project);
   if (!project) {
