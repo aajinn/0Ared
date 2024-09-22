@@ -5,6 +5,13 @@ const projects = [
     link: "/projects/where-paste",
     slug: "where-paste", // Added slug
     markdownPath: "/projects/projects-data/where-paste.md",
+  },
+  {
+    name: "YouTube Video Previewer",
+    description: "YouTube Video Previewer allows you to customize and replace video cards on the YouTube homepage, related pages, and other sections with your own thumbnail, title, channel name, avatar, and upload time.",
+    link: "/projects/youtube-video-previwer",
+    slug: "youtube-video-previwer", // Added slug
+    markdownPath: "/projects/projects-data/youtube-video-previwer.md",
   }
   // Add more projects here
 ];
