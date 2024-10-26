@@ -36,7 +36,7 @@ export default async function ProjectPage({
         <h1 className="text-3xl font-bold">{project.name}</h1>
         <p className="text-gray-600">{project.description}</p>
 
-        <div className="mt-4 w-9/12">
+        <div className="mt-4 w-9/12 p-10">
           <ReactMarkdown>{markdownContent}</ReactMarkdown>{" "}
           {/* Use ReactMarkdown to render the markdown */}
         </div>

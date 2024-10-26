@@ -13,6 +13,14 @@ const projects = [
     slug: "youtube-video-previwer", // Added slug
     markdownPath: "/projects/projects-data/youtube-video-previwer.md",
   }
+  ,
+  {
+    name: "Real-Time Internet Speed Monitor",
+    description: "Displays real-time internet speed.",
+    link: "/projects/real-time-speed-monitor",
+    slug: "real-time-speed-monitor", // Added slug
+    markdownPath: "/projects/projects-data/real-time-speed-monitor.md",
+  }
   // Add more projects here
 ];
 
