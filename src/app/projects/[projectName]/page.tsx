@@ -31,12 +31,12 @@ export default async function ProjectPage({
   }
 
   return (
-    <div className="flex justify-center">
-      <div className="p-6 w-9/12">
+    <div className="flex">
+      <div className="p-2">
         <h1 className="text-3xl font-bold">{project.name}</h1>
-        <p className="text-gray-600">{project.description}</p>
+        <p className="text-gray-600 lg:p-10 text-3x1 ">{project.description}</p>
 
-        <div className="mt-4 w-9/12 p-10">
+        <div className="mt-4 w-9/12 lg:p-10 lg:text-2xl p-1">
           <ReactMarkdown>{markdownContent}</ReactMarkdown>{" "}
           {/* Use ReactMarkdown to render the markdown */}
         </div>

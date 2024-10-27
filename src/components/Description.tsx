@@ -9,6 +9,8 @@ export default function Description() {
         \ Code.
         <br />
         <br />\ Money.
+        <br /> <br /> \{" "}
+        <span className="text-gray-400">Designing ui is shit. </span>
       </p>
     </section>
   );
