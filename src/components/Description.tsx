@@ -10,7 +10,7 @@ export default function Description() {
         <br />
         <br />\ Money.
         <br /> <br /> \{" "}
-        <span className="text-gray-400">Designing ui is shit. </span>
+        <span className="text-gray-400">Designing UI is shit. </span>
       </p>
     </section>
   );
