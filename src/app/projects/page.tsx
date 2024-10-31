@@ -1,3 +1,4 @@
+import Matrix from "@/src/components/Matrix";
 import projects from "./projects"; // Import the projects data
 
 import Link from "next/link";
@@ -5,6 +6,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div className="py-8 text-center">
+      <Matrix />
       {/* Use the Layout component for centering */}
       <h2 className="text-2xl font-bold mb-4 p-3">Projects</h2>
       <ul className="flex flex-col items-center w-full">
