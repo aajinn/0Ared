@@ -1,12 +1,15 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-const DigitalRain = () => {
-  const canvasRef = useRef(null);
+const DigitalRain: React.FC = () => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return; // Ensure canvas is available
+
     const context = canvas.getContext("2d");
+    if (!context) return; // Ensure context is available
 
     // Set canvas size to window size
     const resizeCanvas = () => {
@@ -21,12 +24,12 @@ const DigitalRain = () => {
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>?/[]{}|=+-_)(*&^%$#@!";
     const fontSize = 14;
-    const columns = canvas.width / fontSize;
+    const columns = Math.floor(canvas.width / fontSize);
 
     // Array to track the y position of each column
-    const drops = Array(Math.floor(columns)).fill(1);
+    const drops = Array(columns).fill(1);
 
-    // Function to get random character
+    // Function to get a random character
     const getRandomChar = () => {
       return characters[Math.floor(Math.random() * characters.length)];
     };
@@ -38,7 +41,7 @@ const DigitalRain = () => {
       context.fillRect(0, 0, canvas.width, canvas.height);
 
       // Set text style
-      context.fillStyle = "#fff";
+      context.fillStyle = "#0F0";
       context.font = `${fontSize}px monospace`;
 
       // Draw characters
@@ -51,7 +54,7 @@ const DigitalRain = () => {
         context.fillText(char, x, y * fontSize);
 
         // Move drop down
-        drops[i] = y >= canvas.height / fontSize ? 0 : y + 1;
+        drops[i] = y * fontSize > canvas.height ? 0 : y + 1;
 
         // Randomly reset some drops to create varying lengths
         if (Math.random() > 0.98) {
