@@ -41,7 +41,7 @@ const DigitalRain: React.FC = () => {
       context.fillRect(0, 0, canvas.width, canvas.height);
 
       // Set text style
-      context.fillStyle = "#0F0";
+      context.fillStyle = "#fff";
       context.font = `${fontSize}px monospace`;
 
       // Draw characters
