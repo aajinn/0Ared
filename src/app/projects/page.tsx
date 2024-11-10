@@ -2,11 +2,13 @@ import Matrix from "@/src/components/Matrix";
 import projects from "./projects"; // Import the projects data
 
 import Link from "next/link";
+import ProjectCard from "@/src/components/ProjectCard";
 
 export default function Projects() {
   return (
     <div className="py-8 text-center">
       <Matrix />
+
       {/* Use the Layout component for centering */}
       <h2 className="text-2xl font-bold mb-4 p-3">Projects</h2>
       <ul className="flex flex-col items-center w-full">
@@ -22,7 +24,7 @@ export default function Projects() {
               href={project.link}
               prefetch={true}
             >
-              {project.name}
+              <ProjectCard projectName={project.name} />
             </Link>
           </li>
         ))}
