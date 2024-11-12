@@ -27,6 +27,7 @@ export default function Projects() {
           </li>
         ))}
       </ul>
+      <p className="text-gray-500">more</p>
     </div>
   );
 }
