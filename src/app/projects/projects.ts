@@ -20,8 +20,14 @@ const projects = [
     link: "/projects/real-time-speed-monitor",
     slug: "real-time-speed-monitor", // Added slug
     markdownPath: "/projects/projects-data/real-time-speed-monitor.md",
+  },
+  {
+    name: "Floating Todo App",
+    description: "A floating todo app that persists across web pages",
+    link: "/projects/floating-todo-app",
+    slug: "floating-todo-app", // Added slug
+    markdownPath: "/projects/projects-data/floating-todo-app.md",
   }
-  // Add more projects here
 ];
 
 export default projects;
