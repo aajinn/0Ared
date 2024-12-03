@@ -3,5 +3,41 @@
 @tailwind utilities;
 
 strong {
-  font-size: x-large;
+    font-size: x-large;
+}
+
+.markdown h1 {
+    @apply text-4xl font-bold text-black;
+}
+
+.markdown h2 {
+    @apply text-3xl font-semibold text-black mt-6;
+}
+
+.markdown p {
+    @apply text-lg leading-relaxed text-black mt-4;
+}
+
+.markdown a {
+    @apply text-blue-500 underline hover:text-blue-700;
+}
+
+.markdown ul {
+    @apply list-disc list-inside my-4;
+}
+
+.markdown ol {
+    @apply list-decimal list-inside my-4;
+}
+
+.markdown li {
+    @apply text-lg text-black;
+}
+
+.markdown pre {
+    @apply bg-gray-900 text-gray-200 p-4 rounded-md overflow-x-auto my-4;
+}
+
+.markdown code {
+    @apply bg-gray-100 text-red-500 px-1 rounded;
 }
