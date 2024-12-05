@@ -72,10 +72,55 @@ domain - namecheap (_onlinenotepad.lol_)
 ,price i think 2 to 5 dollars for first
 year.
 
-02-12-2024 today i found an 11 hour
+#### 02-12-2024
+
+today i found an 11 hour
+
 nextjs trello clone video got new things
 about nextjs , project orgainizing and
 code and it's been only 30 min of a 11
 hour plus video , i think i need to
 finish and got an idea for the notepad
 app.
+
+#### 04-12-2024
+
+today i published an all in one text
+tool web app. domain - texttools.pro
+host - netlify stack - nextjs 15 ,
+tailwind
+
+-   mvp 1.0  
+    create landing page. create about ,
+    privacy , terms and conditions
+    pages  
+    create tools :- sort text, convert
+    case, spell corrector ,find and
+    replace, difference checker
+
+planning to make money by adsense  
+how do i market?
+
+-   make instagram reels , not sure what
+    content  
+    plan to add some trending, green
+    screen , sigma , skiibidi stuff.
+
+#### 05-12-2024
+
+idea to make an emoji editor
+
+web app.  
+create two web app (don't know why)  
+domains - _emojieditor.pro_ and  
+_emojieditor.online_ for 1 year (4
+dollar)
+
+along with web app planned to create two
+chrome extenstions also
+
+-   and also need to create an notepad
+    exentenstion to promote
+    _onlinenotepad.lol_
+-   create an chrome extentsion version
+    of _texttools.pro_ (also to promote)
