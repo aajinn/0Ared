@@ -14,8 +14,8 @@ i published i think 4 to 5 website
 
 first i started with _creating blog_
 
--   plan is to make money via ads
-    brought two domian
+- plan is to make money via ads
+  brought two domian
 
 1. ajtechy.com
 2. thinkkerala.com
@@ -46,11 +46,11 @@ sat-sun - publish
 current published chrome extenstions
 (03-12-2024)
 
--   Floating Todo App
--   Real time internet speed monitor
--   Youtube video preivewer
--   Wherepaste?
--   youtube feed customizer
+- Floating Todo App
+- Real time internet speed monitor
+- Youtube video preivewer
+- Wherepaste?
+- youtube feed customizer
 
 built another website to download yt
 videos _ytvd.pro_ still working since i
@@ -90,21 +90,21 @@ tool web app. domain - texttools.pro
 host - netlify stack - nextjs 15 ,
 tailwind
 
--   mvp 1.0  
-    create landing page. create about ,
-    privacy , terms and conditions
-    pages  
-    create tools :- sort text, convert
-    case, spell corrector ,find and
-    replace, difference checker
+- mvp 1.0  
+  create landing page. create about ,
+  privacy , terms and conditions
+  pages  
+  create tools :- sort text, convert
+  case, spell corrector ,find and
+  replace, difference checker
 
 planning to make money by adsense  
 how do i market?
 
--   make instagram reels , not sure what
-    content  
-    plan to add some trending, green
-    screen , sigma , skiibidi stuff.
+- make instagram reels , not sure what
+  content  
+  plan to add some trending, green
+  screen , sigma , skiibidi stuff.
 
 #### 05-12-2024
 
@@ -119,8 +119,17 @@ dollar)
 along with web app planned to create two
 chrome extenstions also
 
--   and also need to create an notepad
-    exentenstion to promote
-    _onlinenotepad.lol_
--   create an chrome extentsion version
-    of _texttools.pro_ (also to promote)
+- and also need to create an notepad
+  exentenstion to promote
+  _onlinenotepad.lol_
+- create an chrome extentsion version
+  of _texttools.pro_ (also to promote)
+
+chrome extentsions (01-01-2025)
+
+![chrome_extentsion_screen_shot](chrome_extentsion_screen_shot.png)
+
+- new projects (14-01-2025)  
+  _svgeditor.pro_ - Free online SVG editor with real-time preview, color customization, and easy export options. Edit SVG files directly in your browser.(mvp ready)
+
+_fixsk.in_ - ai recommeded skin products (mvp not ready)
