@@ -14,7 +14,7 @@ export default function Header() {
                             </span>
                         </Link>
                         <Link
-                            href="https://github.com/ARed99"
+                            href="https://github.com/aajinn"
                             className="hover:text-gray-300 px-2 py-1 font-semibold">
                             <span>
                                 Github
