@@ -7,22 +7,15 @@ export default function Header() {
                 <div className="flex flex-col items-center">
                     <nav className="flex flex-wrap justify-center space-x-2 md:space-x-4">
                         <Link
-                            href="/"
-                            className="hover:text-gray-300 px-2 py-1 font-semibold">
-                            <span>
-                                Home
-                            </span>
-                        </Link>
-                        <Link
                             href="https://github.com/aajinn"
-                            className="hover:text-gray-300 px-2 py-1 font-semibold">
+                            className="hover:text-gray-300 px-2 py-1 font-semibold underline">
                             <span>
                                 Github
                             </span>
                         </Link>
                         <Link
                             href="https://x.com/ChandyAjin"
-                            className="hover:text-gray-300 px-2 py-1 font-semibold">
+                            className="hover:text-gray-300 px-2 py-1 font-semibold underline">
                             <span>
                                 X
                             </span>
