@@ -35,4 +35,3 @@ function NavLink({ href, text }: { href: string; text: string }) {
           </Link>
      );
 }
-ChandyAjin;
