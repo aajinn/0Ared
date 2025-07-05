@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import CardList from '@/src/components/CardList';
 
 const Home = () => {
@@ -41,11 +41,13 @@ const Home = () => {
         "bg-lime-500 text-black"
     ];
 
-    // Generate skills with random colors
-    const skills = skillNames.map(name => ({
-        name,
-        color: colorOptions[Math.floor(Math.random() * colorOptions.length)]
-    }));
+    // Memoize skills with random colors to prevent unnecessary re-renders
+    const skills = useMemo(() =>
+        skillNames.map(name => ({
+            name,
+            color: colorOptions[Math.floor(Math.random() * colorOptions.length)]
+        })), []
+    );
 
     const webApps = [
         "pm.ared.dev - Project Management",
@@ -75,7 +77,7 @@ const Home = () => {
                         <div className="flex flex-wrap gap-3">
                             {skills.map((skill, index) => (
                                 <div
-                                    key={index}
+                                    key={skill.name}
                                     className={`${skill.color} px-3 py-1 rounded-full font-medium text-xs md:text-sm shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-default`}
                                 >
                                     {skill.name}
