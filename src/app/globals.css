@@ -5,42 +5,53 @@
 body {
   @apply bg-yellow-100;
 }
-strong {
-  font-size: x-large;
+
+/* Enhanced typography */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
 }
 
-.markdown h1 {
-  @apply text-4xl font-bold text-black;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-.markdown h2 {
-  @apply text-3xl font-semibold text-black mt-6;
+/* Performance optimizations */
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .will-change-opacity {
+    will-change: opacity;
+  }
 }
 
-.markdown p {
-  @apply text-lg leading-relaxed text-black mt-4;
+/* Optimized animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.markdown a {
-  @apply text-blue-500 underline hover:text-blue-700;
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+  will-change: transform, opacity;
 }
 
-.markdown ul {
-  @apply list-disc list-inside my-4;
-}
-
-.markdown ol {
-  @apply list-decimal list-inside my-4;
-}
-
-.markdown li {
-  @apply text-lg text-black;
-}
-
-.markdown pre {
-  @apply bg-gray-900 text-gray-200 p-4 rounded-md overflow-x-auto my-4;
-}
-
-.markdown code {
-  @apply bg-gray-100 text-red-500 px-1 rounded;
+/* Optimize transitions */
+.transition-optimized {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity, color;
 }
