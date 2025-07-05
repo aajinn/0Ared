@@ -2,22 +2,50 @@ import React from 'react';
 import CardList from '@/src/components/CardList';
 
 const Home = () => {
-    const skills = [
-        { name: "Next.js", color: "bg-blue-500 text-white" },
-        { name: "React", color: "bg-cyan-500 text-white" },
-        { name: "TypeScript", color: "bg-blue-600 text-white" },
-        { name: "Node.js", color: "bg-green-600 text-white" },
-        { name: "Express.js", color: "bg-gray-700 text-white" },
-        { name: "Svelte", color: "bg-orange-500 text-white" },
-        { name: "JavaScript", color: "bg-yellow-500 text-black" },
-        { name: "HTML/CSS", color: "bg-red-500 text-white" },
-        { name: "Tailwind CSS", color: "bg-teal-500 text-white" },
-        { name: "Git", color: "bg-orange-600 text-white" },
-        { name: "Chrome Extensions", color: "bg-purple-500 text-white" },
-        { name: "Web Development", color: "bg-indigo-500 text-white" },
-        { name: "API Development", color: "bg-pink-500 text-white" },
-        { name: "Database Design", color: "bg-emerald-600 text-white" }
+    const skillNames = [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "Svelte",
+        "JavaScript",
+        "HTML/CSS",
+        "Tailwind CSS",
+        "Git",
+        "Chrome Extensions",
+        "Web Development",
+        "API Development",
+        "Database Design"
     ];
+
+    // Array of color combinations for random selection
+    const colorOptions = [
+        "bg-blue-500 text-white",
+        "bg-cyan-500 text-white",
+        "bg-blue-600 text-white",
+        "bg-green-600 text-white",
+        "bg-gray-700 text-white",
+        "bg-orange-500 text-white",
+        "bg-yellow-500 text-black",
+        "bg-red-500 text-white",
+        "bg-teal-500 text-white",
+        "bg-orange-600 text-white",
+        "bg-purple-500 text-white",
+        "bg-indigo-500 text-white",
+        "bg-pink-500 text-white",
+        "bg-emerald-600 text-white",
+        "bg-violet-500 text-white",
+        "bg-rose-500 text-white",
+        "bg-sky-500 text-white",
+        "bg-lime-500 text-black"
+    ];
+
+    // Generate skills with random colors
+    const skills = skillNames.map(name => ({
+        name,
+        color: colorOptions[Math.floor(Math.random() * colorOptions.length)]
+    }));
 
     const webApps = [
         "pm.ared.dev - Project Management",
