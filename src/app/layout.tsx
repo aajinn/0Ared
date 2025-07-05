@@ -6,11 +6,14 @@ import Header from "@/src/components/Header";
 const inter = Inter({
      subsets: ["latin"],
      variable: "--font-inter",
+     display: 'swap',
 });
 
 export const metadata: Metadata = {
      title: "Ajin Varghese Chandy",
      description: "Ajin Varghese Chandy's Portfolio Website.",
+     viewport: "width=device-width, initial-scale=1",
+     themeColor: "#fef3c7",
 };
 
 const jsonLd = {
@@ -77,6 +80,11 @@ export default function RootLayout({
                     />
 
                     <meta name="author" content="Ajin Varghese Chandy" />
+
+                    {/* Performance optimizations */}
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
                     <link
                          rel="apple-touch-icon"
                          sizes="76x76"
@@ -101,7 +109,7 @@ export default function RootLayout({
                          color="#5bbad5"
                     />
                     <meta name="msapplication-TileColor" content="#da532c" />
-                    <meta name="theme-color" content="#ffffff" />
+                    <meta name="theme-color" content="#fef3c7" />
                     <script
                          type="application/ld+json"
                          dangerouslySetInnerHTML={{
