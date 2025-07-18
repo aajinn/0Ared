@@ -10,7 +10,7 @@ const Description: React.FC<
     DescriptionProps
 > = ({ markdownContent }) => {
     return (
-        <section className="mb-8 text-center relative">
+        <section className="mb-8 relative">
             <div className="markdown">
                 <ReactMarkdown
                     remarkPlugins={[

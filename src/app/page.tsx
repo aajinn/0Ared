@@ -2,52 +2,49 @@ import React, { useMemo } from 'react';
 import CardList from '@/src/components/CardList';
 
 const Home = () => {
-    const skillNames = [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Express.js",
-        "Svelte",
-        "JavaScript",
-        "HTML/CSS",
-        "Tailwind CSS",
-        "Git",
-        "Chrome Extensions",
-        "Web Development",
-        "API Development",
-        "Database Design"
-    ];
-
-    // Array of color combinations for random selection
-    const colorOptions = [
-        "bg-blue-500 text-white",
-        "bg-cyan-500 text-white",
-        "bg-blue-600 text-white",
-        "bg-green-600 text-white",
-        "bg-gray-700 text-white",
-        "bg-orange-500 text-white",
-        "bg-yellow-500 text-black",
-        "bg-red-500 text-white",
-        "bg-teal-500 text-white",
-        "bg-orange-600 text-white",
-        "bg-purple-500 text-white",
-        "bg-indigo-500 text-white",
-        "bg-pink-500 text-white",
-        "bg-emerald-600 text-white",
-        "bg-violet-500 text-white",
-        "bg-rose-500 text-white",
-        "bg-sky-500 text-white",
-        "bg-lime-500 text-black"
-    ];
-
     // Memoize skills with random colors to prevent unnecessary re-renders
-    const skills = useMemo(() =>
-        skillNames.map(name => ({
+    const skills = useMemo(() => {
+        const skillNames = [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "Svelte",
+            "JavaScript",
+            "HTML/CSS",
+            "Tailwind CSS",
+            "Git",
+            "Chrome Extensions",
+            "Web Development",
+            "API Development",
+            "Database Design"
+        ];
+        const colorOptions = [
+            "bg-blue-500 text-white",
+            "bg-cyan-500 text-white",
+            "bg-blue-600 text-white",
+            "bg-green-600 text-white",
+            "bg-gray-700 text-white",
+            "bg-orange-500 text-white",
+            "bg-yellow-500 text-black",
+            "bg-red-500 text-white",
+            "bg-teal-500 text-white",
+            "bg-orange-600 text-white",
+            "bg-purple-500 text-white",
+            "bg-indigo-500 text-white",
+            "bg-pink-500 text-white",
+            "bg-emerald-600 text-white",
+            "bg-violet-500 text-white",
+            "bg-rose-500 text-white",
+            "bg-sky-500 text-white",
+            "bg-lime-500 text-black"
+        ];
+        return skillNames.map(name => ({
             name,
             color: colorOptions[Math.floor(Math.random() * colorOptions.length)]
-        })), []
-    );
+        }));
+    }, []);
 
     const webApps = [
         "pm.ared.dev - Project Management",
