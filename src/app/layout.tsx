@@ -11,10 +11,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
      title: "Ajin Varghese Chandy",
-     description: "Ajin Varghese Chandy's Portfolio Website.",
-     viewport: "width=device-width, initial-scale=1",
-     themeColor: "#fef3c7",
+     description: "Ajin Varghese Chandy's Portfolio Website."
 };
+
+export const viewport = "width=device-width, initial-scale=1";
 
 const jsonLd = {
      "@context": "https://schema.org",
