@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 };
 
 export const viewport = "width=device-width, initial-scale=1";
-export const themeColor = "#fef3c7";
 
 const jsonLd = {
      "@context": "https://schema.org",
