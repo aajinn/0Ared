@@ -25,10 +25,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const title = match ? match[1] : params.slug.replace(/-/g, ' ');
   const body = match ? content.replace(match[0], '') : content;
   return (
-    <main className="flex justify-center">
-      <article className="prose prose-xl md:prose-2xl max-w-2xl w-full bg-white/90 rounded-lg shadow-lg p-8 my-12">
-        <Link href="/blog" className="inline-block mb-6 text-blue-600 hover:underline">← Back to Blog</Link>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-gray-900">{title}</h1>
+    <main className="flex justify-center px-2 sm:px-4">
+      <article className="prose prose-base sm:prose-lg md:prose-xl lg:prose-2xl max-w-full sm:max-w-2xl w-full bg-white/90 rounded-lg shadow-lg p-4 sm:p-8 my-8 sm:my-12">
+        <Link href="/blog" className="inline-block mb-4 sm:mb-6 text-blue-600 hover:underline text-base sm:text-lg">← Back to Blog</Link>
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-8 text-gray-900">{title}</h1>
         <Description markdownContent={body} />
       </article>
     </main>
