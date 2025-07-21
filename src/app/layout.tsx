@@ -81,10 +81,6 @@ export default function RootLayout({
 
                     <meta name="author" content="Ajin Varghese Chandy" />
 
-                    {/* Performance optimizations */}
-                    <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
                     <link
                          rel="apple-touch-icon"
                          sizes="76x76"
