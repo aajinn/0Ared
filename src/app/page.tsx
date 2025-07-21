@@ -79,7 +79,7 @@ const Home = () => {
 
                     <div className="mb-8 md:mb-12 text-center md:text-left">
                         <p className="text-base sm:text-xl text-gray-800 italic">
-                            "In this AI era, you don't have to remember syntax, just <strong className='text-red-600'>keywords</strong>."
+                            &quot;In this AI era, you don&apos;t have to remember syntax, just <strong className='text-red-600'>keywords</strong>.&quot;
                         </p>
                     </div>
 
