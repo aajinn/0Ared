@@ -16,4 +16,8 @@ Somewhere along the way I realized this idea wasn't new. It's actually a rebrand
 
 Now I use Extension Manager every day. Browser feels faster. Toolbar looks clean. I don't dread managing my extensions anymore.
 
-This was a small project, but it reminded me why I love building tools: make life just a little better, one click at a time. 
+This was a small project, but it reminded me why I love building tools: make life just a little better, one click at a time.
+
+---
+
+**[Try Extension Manager on Chrome Web Store](https://chromewebstore.google.com/detail/extension-manager/dbgdkefgdjngogpeanaoiddgcgonpalb?hl=en-GB&authuser=0)** 
