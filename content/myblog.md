@@ -1,3 +1,9 @@
+---
+title: "myblog"
+date: 2025-07-28T19:01:34.319Z
+slug: myblog
+---
+
 ### Last updated _07-04-25_
 
 ### hey , my name is ajin
@@ -133,6 +139,4 @@ chrome extentsions (01-01-2025)
 
 -    new projects (14-01-2025)  
      _svgeditor.pro_ - Free online SVG editor with real-time preview, color customization, and easy export options. Edit SVG files directly in your browser.(mvp ready)
-
-_fixsk.in_ - ai recommeded skin products (mvp not ready)
 
