@@ -150,7 +150,7 @@ const Home = () => {
                         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
                             Ajin Varghese Chandy
                         </h1>
-                        <p className="text-base sm:text-lg md:text-xl text-gray-700">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8">
                             <a href="mailto:careerajin@gmail.com" className="hover:underline inline-flex items-center">
                                 careerajin@gmail.com
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 ml-2">
@@ -158,9 +158,18 @@ const Home = () => {
                                 </svg>
                             </a>
                         </p>
+
+                        {/* Experience Image */}
+                        <div className="flex justify-center mb-8">
+                            <img
+                                src="/1.png"
+                                alt="Experience and Skills Overview"
+                                className="max-w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            />
+                        </div>
                     </div>
 
-             
+
 
                     {/* Skills Section */}
                     <div className="mb-10 md:mb-16">
