@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
+import { isAuthenticated } from '@/src/lib/auth';
+
+// Force dynamic rendering for this route
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
-  const isAuthenticated = cookies().get('isAuthenticated')?.value === 'true';
-  
-  if (!isAuthenticated) {
+  if (!isAuthenticated()) {
     return NextResponse.json(
       { error: 'Not authenticated' },
       { status: 401 }

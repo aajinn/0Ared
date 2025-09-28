@@ -24,8 +24,8 @@ export default function AdminDashboard() {
   useEffect(() => {
     const checkAuthAndLoadPosts = async () => {
       try {
-        // Check authentication
-        const authResponse = await fetch('/api/auth/check', { credentials: 'same-origin' });
+        // Check authentication using admin session endpoint
+        const authResponse = await fetch('/api/admin/auth/session', { credentials: 'same-origin' });
         if (!authResponse.ok) {
           router.push('/admin');
           return;
@@ -48,18 +48,7 @@ export default function AdminDashboard() {
     checkAuthAndLoadPosts();
   }, [router]);
 
-  const handleLogout = async () => {
-    try {
-      await fetch('/api/auth/logout', {
-        method: 'POST',
-        credentials: 'same-origin',
-      });
-      router.push('/admin');
-      router.refresh();
-    } catch (error) {
-      console.error('Logout failed:', error);
-    }
-  };
+
 
   const handleEdit = (post: BlogPost) => {
     setEditingPost(post);
@@ -173,19 +162,15 @@ export default function AdminDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold">Admin Dashboard</h1>
-          <button
-            onClick={handleLogout}
-            className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
-          >
-            Logout
-          </button>
-        </div>
+    <div>
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+        <p className="mt-2 text-sm text-gray-600">
+          Manage your website content and settings
+        </p>
+      </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-8">
           <h2 className="text-xl font-semibold mb-4">
           {editingPost ? 'Edit Blog Post' : 'Add New Blog Post'}
         </h2>
@@ -262,7 +247,7 @@ export default function AdminDashboard() {
           </form>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
           <h2 className="text-xl font-semibold mb-4">Existing Blog Posts</h2>
           {posts.length === 0 ? (
             <p className="text-gray-500">No blog posts yet.</p>
@@ -296,7 +281,6 @@ export default function AdminDashboard() {
               ))}
             </ul>
           )}
-        </div>
       </div>
     </div>
   );
