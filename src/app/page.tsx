@@ -18,7 +18,7 @@ export default function Home() {
             🔥 Frontend without performance debt, backend without spaghetti<br />
             🧠 Strong grasp of data flow, auth, caching, and API design<br />
             🧱 Opinionated about simplicity, ruthless about bad abstractions<br />
-            🚫 If it doesn't scale or ship, it's trash
+            🚫 If it doesn&apos;t scale or ship, it&apos;s trash
           </p>
         </div>
         <div className="mt-4">
