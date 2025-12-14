@@ -1,207 +1,122 @@
-"use client";
+export default function Home() {
+  return (
+    <div>
+      {/* HEADER */}
+      <div className="text-center">
+        <img src="https://capsule-render.vercel.app/api?type=waving&color=0f172a&height=280&section=header&text=Ajin%20Varghese%20Chandy&fontSize=70&fontColor=ffffff&fontFace=Montserrat&animation=fadeIn&fontAlignY=35&desc=Fullstack%20Engineer&descAlignY=60&descAlign=50" className="w-full" alt="Header" />
+      </div>
+      <br />
 
-import React, { useMemo } from 'react';
-import dynamic from 'next/dynamic';
+      {/* ABOUT */}
+      <div className="flex flex-col items-center">
+        <h3 className="text-center">⚔️ About Me</h3>
+        <div className="text-left max-w-2xl">
+          <p>
+            Full Stack developer building <b>production-grade web apps</b> with clean architecture and zero fluff.
+          </p>
+          <p>
+            🔥 Frontend without performance debt, backend without spaghetti<br />
+            🧠 Strong grasp of data flow, auth, caching, and API design<br />
+            🧱 Opinionated about simplicity, ruthless about bad abstractions<br />
+            🚫 If it doesn't scale or ship, it's trash
+          </p>
+        </div>
+        <div className="mt-4">
+          <a href="https://github.com/aajinn" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+          </a>
+        </div>
+      </div>
 
-const SectionCard = dynamic(() => import('@/src/components/SectionCard'), {
-    loading: () => <div className="bg-white/90 border border-gray-200 rounded-2xl shadow-lg h-48 animate-pulse"></div>,
-    ssr: false
-});
+      <br />
 
-const Home = () => {
-    // Memoize skills with random colors to prevent unnecessary re-renders
-    const skills = useMemo(() => {
-        const skillNames = [
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Node.js",
-            "Express.js",
-            "Svelte",
-            "JavaScript",
-            "HTML/CSS",
-            "Tailwind CSS",
-            "Git",
-            "Chrome Extensions",
-            "Web Development",
-            "API Development",
-            "Database Design",
-            "Notion",
-            "Slack",
-            "MongoDB",
-            "MySQL",
+      {/* TECH STACK */}
+      <h3 className="text-center">🛠 Tech Stack</h3>
 
-            "Docker",
-            "Kubernetes",
+      {/* FRONTEND */}
+      <div className="text-center space-y-2">
+        <h4>🌐 Frontend</h4>
+        <div className="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+        </div>
+        <div className="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+          <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+        </div>
+      </div>
 
-        ];
-        const colorOptions = [
-            "bg-blue-500 text-white",
-            "bg-cyan-500 text-white",
-            "bg-blue-600 text-white",
-            "bg-green-600 text-white",
-            "bg-gray-700 text-white",
-            "bg-orange-500 text-white",
-            "bg-yellow-500 text-black",
-            "bg-red-500 text-white",
-            "bg-teal-500 text-white",
-            "bg-orange-600 text-white",
-            "bg-purple-500 text-white",
-            "bg-indigo-500 text-white",
-            "bg-pink-500 text-white",
-            "bg-emerald-600 text-white",
-            "bg-violet-500 text-white",
-            "bg-rose-500 text-white",
-            "bg-sky-500 text-white",
-            "bg-lime-500 text-black"
-        ];
-        return skillNames.map(name => ({
-            name,
-            color: colorOptions[Math.floor(Math.random() * colorOptions.length)]
-        }));
-    }, []);
+      <br />
 
-    const componentSections = [
-        {
-            title: "layout & structure",
-            icon: "🔧",
-            items: [
-                "responsive navbar with logo and nav links", "sticky header with shadow on scroll", "collapsible sidebar with icons and tooltips", "drawer menu for mobile", "footer with 3 column layout", "container with max-width and center alignment", "section with title and content", "grid with 4 columns and gap", "flex row with spacing between", "fullscreen hero section with bg image", "layout with header, sidebar, and main content"
-            ],
-        },
-        {
-            title: "ui components",
-            icon: "🧩",
-            items: [
-                "card with image, title, text, and button", "button with hover effect and loading spinner", "modal with overlay and close button", "dropdown with animation", "tabs with active tab indicator", "accordion with icons and animation", "tooltip on hover with custom text", "badge with color and count", "stepper with progress indicator", "toast notification in bottom right", "alert box with success or error status", "progress bar with percentage", "slider with label and range", "carousel with autoplay and arrows"
-            ],
-        },
-        {
-            title: "forms",
-            icon: "🖊️",
-            items: [
-                "login form with email and password fields", "signup form with confirm password", "form with input validation errors", "input field with label and placeholder", "textarea with auto resize", "checkbox with custom styling", "radio buttons with labels", "select dropdown with search", "multi-select with tags", "form with disabled state and loader", "form submission with API call", "reset button and clear fields", "floating label input fields"
-            ],
-        },
-        {
-            title: "data & api",
-            icon: "🔁",
-            items: [
-                "api call using fetch in useEffect", "axios get request with loading state", "display fetched data in cards", "render list from api", "pagination buttons for api results", "infinite scroll with loading spinner", "filter api data by category", "search input to filter results", "handle 404 or api error state", "post form data to api endpoint", "update item with PUT request", "delete button with confirmation"
-            ],
-        },
-        {
-            title: "data & api (general use)",
-            icon: "🔁",
-            items: [
-                "connect to api and fetch data",
-                "display api data in card or table format",
-                "show loading while fetching",
-                "handle error if api fails",
-                "search and filter through api results",
-                "pagination with next/prev buttons",
-                "infinite scroll with data loading",
-                "send data to api with post request",
-                "update existing data with put or patch",
-                "delete data with confirmation",
-                "revalidate or refresh data on action",
-                "secure api requests with auth headers",
-                "cache api data for performance",
-                "use environment variables for api url",
-                "organize all api calls in one file or hook",
-            ],
-        },
-        {
-            title: "mobile & views",
-            icon: "📱",
-            items: [
-                "responsive layout using tailwind breakpoints", "hamburger menu for mobile", "mobile header with back button", "bottom tab bar with icons", "full-screen mobile drawer", "cards stacked vertically on mobile", "horizontal scrollable product list", "media queries with tailwind", "swipe gestures for mobile", "mobile-first navigation layout", "collapsible sections for smaller screens"
-            ],
-        },
-        {
-            title: "dashboard & stats",
-            icon: "📊",
-            items: [
-                "dashboard layout with sidebar and content", "overview cards with icon, number, and label", "line chart using chart.js", "bar chart with dynamic data", "doughnut chart with legend", "data table with pagination", "sortable columns in table", "filter table rows by status", "stats card with trend icon", "activity feed component", "user performance chart", "real-time data with polling"
-            ],
-        },
-        {
-            title: "user & auth",
-            icon: "👤",
-            items: [
-                "login page with redirect after auth", "register form with confirm password", "forgot password page with email input", "profile card with avatar, name, and bio", "settings page with input forms", "user list with role badges", "auth guard for private routes", "jwt token handling with localStorage", "logout button with redirect", "show user initials in avatar", "editable profile form"
-            ],
-        },
-        {
-            title: "themes & modes",
-            icon: "🌗",
-            items: [
-                "dark mode toggle using tailwind", "auto-switch theme based on system", "light and dark theme button", "tailwind config with custom color palette", "themed background and text color", "useContext for theme switching", "icons change based on theme", "toggle between themes with animation", "save theme in localStorage", "apply theme globally with class"
-            ],
-        },
-    ];
+      {/* BACKEND */}
+      <div className="text-center space-y-2">
+        <h4>⚙️ Backend</h4>
+        <div className="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+          <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+          <img src="https://img.shields.io/badge/Next.js_API_Routes-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js API Routes" />
+          <img src="https://img.shields.io/badge/Server_Actions-0F172A?style=for-the-badge" alt="Server Actions" />
+          <img src="https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge" alt="REST APIs" />
+        </div>
+      </div>
 
-    return (
-        <main className="min-h-screen bg-gray-50">
-            <div className="container mx-auto px-3 sm:px-4 md:px-6 py-8 md:py-12">
-                <div className="max-w-7xl mx-auto">
-                    {/* Hero Section */}
-                    <div className="mb-10 md:mb-16 text-center">
-                        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-                            Ajin Varghese Chandy
-                        </h1>
-                        <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8">
-                            <a href="mailto:careerajin@gmail.com" className="hover:underline inline-flex items-center">
-                                careerajin@gmail.com
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 ml-2">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                                </svg>
-                            </a>
-                        </p>
+      <br />
 
-                        {/* Experience Image */}
-                        <div className="flex justify-center mb-8">
-                            <img
-                                src="/1.png"
-                                alt="Experience and Skills Overview"
-                                className="max-w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                            />
-                        </div>
-                    </div>
+      {/* DATABASE & AUTH */}
+      <div className="text-center space-y-2">
+        <h4>💾 Database & Auth</h4>
+        <div className="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+          <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+          <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
+          <img src="https://img.shields.io/badge/Auth-JWT%20%7C%20Cookies-0F172A?style=for-the-badge" alt="Auth" />
+        </div>
+      </div>
 
+      <br />
 
+      {/* TOOLING */}
+      <div className="text-center space-y-2">
+        <h4>🧰 Tooling & Workflow</h4>
+        <div className="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+          <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+          <img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black" alt="Prettier" />
+        </div>
+      </div>
 
-                    {/* Skills Section */}
-                    <div className="mb-10 md:mb-16">
-                        <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
-                            {skills.map((skill) => (
-                                <div
-                                    key={skill.name}
-                                    className={`${skill.color} px-2 py-1 sm:px-3 rounded-full font-medium text-xs sm:text-sm shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-default`}
-                                >
-                                    {skill.name}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+      <br />
 
-                    {/* Gallery Section */}
-                    {/*
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
-                        {componentSections.map((section) => (
-                            <SectionCard
-                                key={section.title}
-                                title={section.title}
-                                icon={section.icon}
-                                items={section.items}
-                            />
-                        ))}
-                    </div>
- */}
-                </div>
-            </div>
-        </main>
-    );
-};
+      {/* DEPLOYMENT */}
+      <div className="text-center space-y-2">
+        <h4>🚀 Deployment</h4>
+        <div className="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+          <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+        </div>
+      </div>
 
-export default Home;
+      <br />
+
+      {/* CONTRIBUTIONS */}
+      <div className="flex flex-col items-center">
+        <h3 className="text-center">🐍 Contribution Activity</h3>
+        <div>
+          <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Contribution Snake" />
+        </div>
+      </div>
+
+      <br />
+
+      {/* FOOTER */}
+      <div className="text-center">
+        <img src="https://capsule-render.vercel.app/api?type=waving&color=0f172a&height=100&section=footer" className="w-full" alt="Footer" />
+      </div>
+    </div>
+  );
+}
+
