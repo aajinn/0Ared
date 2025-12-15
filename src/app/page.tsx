@@ -10,7 +10,7 @@ export default function Home() {
       {/* ABOUT */}
       <div className="flex flex-col items-center">
         <h3 className="text-center">⚔️ About Me</h3>
-        <div className="text-left max-w-2xl">
+        <div className="text-left max-w-2xl mx-4 sm:mx-0">
           <p>
             Full Stack developer building <b>production-grade web apps</b> with clean architecture and zero fluff.
           </p>
