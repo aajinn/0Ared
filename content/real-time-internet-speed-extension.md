@@ -8,7 +8,6 @@ So I built it.
 
 The extension sits in the Chrome toolbar and displays your current internet speed, both download and upload, in real-time. No clicking, no waiting. Just raw numbers, changing live as your connection fluctuates.
 
-![Real-Time Internet Speed Analytics Dashboard](/Screenshot_2.png)
 
 The real challenge was keeping it lightweight. I didn't want to build something bloated. It had to be fast, minimal, accurate. I used the Chrome extension APIs to monitor network usage and update the icon with the current speed — just enough info, no distractions.
 
