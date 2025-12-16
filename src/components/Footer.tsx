@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 mt-16">
+    <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-4">
           <div className="flex space-x-6">
@@ -13,7 +13,7 @@ export default function Footer() {
               <img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
             </a>
             <a 
-              href="https://x.com/ChandyAjin" 
+              href="https://x.com/areddev" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
