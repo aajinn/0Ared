@@ -79,9 +79,12 @@ export default function Home() {
             🚫 If it doesn&apos;t scale or ship, it&apos;s trash
           </p>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 flex gap-4">
           <a href="https://github.com/aajinn" target="_blank" rel="noopener noreferrer">
             <img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+          </a>
+          <a href="/projects" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+            View Projects
           </a>
         </div>
       </div>

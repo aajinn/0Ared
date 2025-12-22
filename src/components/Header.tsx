@@ -6,6 +6,7 @@ export default function Header() {
                <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-0">
                     <Link href="/" className="font-bold text-lg sm:text-xl text-gray-900">Ajin</Link>
                     <Link href="/blog" className="ml-2 sm:ml-4 text-blue-600 hover:underline">Blog</Link>
+                    <Link href="/projects" className="ml-2 sm:ml-4 text-blue-600 hover:underline">Projects</Link>
                </div>
                <nav className="flex flex-wrap gap-3 sm:gap-6 md:gap-8">
                     <Link
